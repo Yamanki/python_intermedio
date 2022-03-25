@@ -1,4 +1,11 @@
 def run():
+    list1= [1,4,5,6,9,13,19,21]
+    #find the odd numbers inside a list
+    odd= [i for i in list1 if i %2 !=0]
+    ### by applying reduce
+    odd_red= list(filter(lambda x: x%2 !=0, list1))
+    print(odd, 'vs',odd_red)
+
     # get the sqrt of a number form a list of them
     my_list=[1,2,4,5,6,9,13,19,21]
     sqr=[i**2 for i in my_list]
