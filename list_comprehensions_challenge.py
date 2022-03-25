@@ -1,5 +1,5 @@
 def run():
-    naturals_sqr=[i**2 for i in range(1,101) if i % 3 !=0]
+    naturals_sqr=[i for i in range(1,10000) if i % 4 ==0 and i % 6 ==0 and i % 9 ==0]
     
     print(naturals_sqr)
 
